@@ -6,9 +6,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class CrudController {
-	@GetMapping
+	@GetMapping("/one")
 	@ResponseBody
-	public String HealthCheck() {
-		return "All are working fine";
+	public String HealthCheck1() {
+		return "All are working fine1";
 	}
+
+	@GetMapping("/two")
+	@ResponseBody
+	public String HealthCheck2() {
+		return "All are working fine2";
+	}
+	
 }
