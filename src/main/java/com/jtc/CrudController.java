@@ -18,4 +18,10 @@ public class CrudController {
 		return "All are working fine2";
 	}
 	
+	@GetMapping("/three")
+	@ResponseBody
+	public String HealthCheck3() {
+		return "All are working fine3";
+	}
+	
 }
