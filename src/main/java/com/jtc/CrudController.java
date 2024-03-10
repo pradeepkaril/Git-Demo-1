@@ -24,4 +24,10 @@ public class CrudController {
 		return "All are working fine3";
 	}
 	
+	@GetMapping("/four")
+	@ResponseBody
+	public String HealthCheck4() {
+		return "All are working fine4";
+	}
+	
 }
